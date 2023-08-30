@@ -1,8 +1,8 @@
 ### Important
 ---
-- This mod requires [AceCoreLib](https://github.com/HDest-Community/AceCoreLib).
 - There are three merchants, one for each type of item: weapons, ammo, and items.
 - Up to three merchants can spawn on a map. They have a different inventory each time, meaning some items may be missing.
+- Escorting the merchants to the exit will give you a 20% boost per merchant to whatever money you have earned, but will also remove them from the map, meaning they will no longer be there in the case of hubs. They can still spawn on the next map, however. In multiplayer games, the distance to the arbitrator (usually team leader) is taken into account, and not whoever exited the level. To escort all merchants in multiplayer, have all of them near the arbitrator, then exit the level.
 - You can carry the merchant by using Sprinting + Use. Put them down by crouching and holding the sprint key for half a second. You can only carry one merchant at a time.
 
 ### Notes
@@ -10,29 +10,6 @@
 - Change between currencies using the Page Up/Down keys.
 - Change between categories using the Left/Right arrow keys, and between items with the Up/Down arrow keys
 - Loadout code for the mercenary bucks is `bux`.
-- CVars are:
-	`hdm_cardback [0-1]`: Card back graphic.
-
-### Tiberium
----
-- Crystals can spawn in secret sectors and can only be "mined" with a chainsaw. You can also shoot them to clear out a path but don't expect them to drop much.
-- Sectors with tiberium crystals will be toxic. Don't attempt to mine without a radsuit, you will die. Chunks will also be toxic.
-- Blue crystals are much rarer and also much more dangerous.
-- There is no guarantee you'd be able to mine a field if it's too large. That's a severe case of "working as intended". If you are clever enough, you might be able to do it with some strategic planning. But don't expect to always succeed.
-
-### Bounty
----
-- One of the enemies on the map, out of those valid, will have a bounty on their head. They can be recognized by the special effect other monsters do not have (if any).
-- The standard effect is added or increased shield and increased health, along with increased aggressiveness. These enemies will be much deadlier and harder to kill.
-- More valid targets for bounty and more effects (chosen at random) may be added by additional addons.
-- Monsters that can currently be a target of bounty:
-	- Healer Imps
-	- Marines
-	- Hell Knights/Barons
-	- Cacodemons
-	- Archviles
-	- Cybers/Masterminds
-	- Melodica's Cabal Cultists
 
 ### Slot Machines
 ---
@@ -49,11 +26,10 @@ Payouts are as follows:
 
 ### Poker
 ---
-- A game of Texas Hold'em can be assembled with up to 8 nearby players (2m radius) using the `HDM_AssemblePokerGame` command. The players can be either AI-controlled (merchants) or other human players.
+- A game of Texas Hold'em can be assembled with up to 8 nearby players (3m radius) using the `HDM_AssemblePokerGame` command. The players can be either AI-controlled (merchants) or other human players.
 - Each player needs to have the amount of the big blind ($20) in mercenary bucks in order to join the game.
-- If you walk away from the game, your bet is forfeit. You can shoot enemies if they show up, but do not go outside of the table's marked area.
+- If you walk away from the game, your bet is forfeit. You can shoot enemies if they show up, but do not go farther than 4m away from the spot you occupied when the game started.
 - No idea how to play? See this: https://www.youtube.com/watch?v=b9HYxquQt-M
-- The only way to quit is to walk away. Yes, you will lose what's in the pot. Yes that is intentional. Consider it a tax for getting to leave early.
 
 ### Modding
 ---
@@ -66,41 +42,3 @@ Payouts are as follows:
 ### Known Issues
 ---
 - Merchants can block some paths sometimes. Grab them or pick them up to move them out of the way.
-- Tiberium crystals can block some paths. Either shoot a path through them or climb them.
-
-### Credits
----
-
-Original Mod Credits are displayed below.
-- Cryomundus, for porting original mod to HDest Community Organization, updating as needed.
-- Undead Zeratul, adding all sorts of Shop Entries & filters.
-
-Code:
-- Accensus
-- arooкas for the hand eval code. If I ever stop praising the guy, assume I died.
-
-Sprites:
-- Merchant (Hobo): Strife (Rogue)
-- Merchant (Resident Evil): Based on above but made by PillowBlaster. Ten points to Gryffindor!
-- Merchant (Daina skins): Hege Cactus. Taken from La Tailor Girl.
-- Merchant (Succubus): YuraoftheHairFan, Espi, Ebola, Vader; greatly edited by Mor'ladim to match my high standards, the absolute madman and legend.
-- Merchant (Morshu): Legend of Zelda by Capcom; rotations edited by HegeCactus.
-- Merchant (Minecraft): Based on the Wandering Trader from Minecraft (Mojang), edited by Craneo.
-- Bucks: Pillowblaster
-- Chips: https://www.gamedeveloperstudio.com/graphics/viewgraphic.php?item=482839ps487in390430 // I didn't actually buy this. I ripped it like an absolute bastard. I wanted to buy it but account registrations are DISTUSTANG.
-- Playing cards: https://www.spriters-resource.com/nec_pc_8801/ginga/sheet/107022/
-- Tiberium: KANE HIMSELF! Nah, Pillowblaster.
-
-Sounds:
-- Poker stuff: https://www.sounds-resource.com/pc_computer/tabletopsimulator/sound/24381/
-- Card deal sound by arookas.
-
-ZForms:
-- Gutawer & phantombeta
-
-Card backs:
-- Default: same as the rest of the cards.
-- Classic: arooкas.
-
-Additional:
-- Kat, additional store items
